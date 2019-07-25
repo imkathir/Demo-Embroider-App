@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('category', function() {
+  });
+  this.route('vegetables');
+  this.route('animals');
+  this.route('birds');
 });
 
 export default Router;

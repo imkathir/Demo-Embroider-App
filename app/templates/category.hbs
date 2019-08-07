@@ -1,5 +1,5 @@
-<h2>{{title}}</h2>
+<h6>{{title}}</h6>
 {{#each model as |category|}}
-  <h5><LinkTo @params={{array category.route}}>{{category.name}}</LinkTo></h5>
+  <p><LinkTo @params={{array category.route}}>{{category.name}}</LinkTo></p>
 {{/each}}
 {{outlet}}

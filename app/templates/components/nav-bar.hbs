@@ -1,7 +1,8 @@
-<div class="nav-sidebar-inner-scroll">
-  <ul class="nav nav-pills nav-stacked fill nav-bottom-spacing">
-    <LinkTo @params={{array "application"}}>
-      <li>HOME</li>
-    </LinkTo>
-  </ul>
-</div>
+<ul class="nav nav-pills nav-stacked fill nav-bottom-spacing">
+  <LinkTo @params={{array "home"}} @current-when="home">
+    <li>HOME</li>
+  </LinkTo>
+  <LinkTo @params={{array "category"}} @current-when="category">
+    <li>CATEGORY</li>
+  </LinkTo>
+</ul>

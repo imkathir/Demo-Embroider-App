@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('vegetables');
   this.route('animals');
   this.route('birds');
+  this.route('home');
 });
 
 export default Router;

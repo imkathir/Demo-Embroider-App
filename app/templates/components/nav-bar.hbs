@@ -5,4 +5,22 @@
   <LinkTo @params={{array "category"}} @current-when="category">
     <li>CATEGORY</li>
   </LinkTo>
+
+  {{#accordion-list as |accordion|}}
+    {{#accordion.item as |accordionItem|}}
+      <!-- Create a 'toggle' and a 'panel' for the item -->
+      {{#accordionItem.toggle}}
+        <a href="#"><li>CATEGORY tab<b class="caret"></b></li></a>
+      {{/accordionItem.toggle}}
+
+      <!-- Clicking on the 'toggle' will display the contents of the 'panel' -->
+      {{#accordionItem.panel}}
+        <ul>
+        {{#each model as |category|}}
+          <LinkTo @params={{array category.route}}><li>{{category.name}}</li></LinkTo>
+        {{/each}}
+        </ul>
+      {{/accordionItem.panel}}
+    {{/accordion.item}}
+  {{/accordion-list}}
 </ul>

@@ -66,6 +66,9 @@ table {
 .navbar-section ul {
   list-style: none;
 }
+.navbar-section ul:nth-child(n+2) li {
+  padding-left: 20px;
+}
 .navbar-section ul li {
   padding: 15px;
 }

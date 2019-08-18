@@ -4,9 +4,10 @@ export default Component.extend({
 tagName: '',
 model: computed( function() {
   return [
-    { name:'Animals', route: 'animals' },
     { name:'Vegetables', route: 'vegetables' },
-    { name:'Birds', route: 'birds' }
+    { name:'Birds', route: 'birds' },
+    { name:'Cow', route: 'animals' },
+    { name:'Goat', route: 'goats' }
   ];
 })
 });

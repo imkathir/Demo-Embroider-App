@@ -1,5 +1,5 @@
 <h6>{{title}}</h6>
-{{#each model as |animal|}}
-  <p>{{animal}}</p>
+{{#each model as |bird|}}
+  <Bird @src={{bird.src}} @name={{bird.name}} @alt={{bird.alt}} @isWild={{if bird.isWild "YES" "NO"}} @category="bird" />
 {{/each}}
 {{outlet}}

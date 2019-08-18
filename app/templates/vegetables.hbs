@@ -1,5 +1,5 @@
 <h6>{{title}}</h6>
 {{#each model as |vegetable|}}
-  <p>{{vegetable}}</p>
+  <Category @src={{vegetable.src}} @name={{vegetable.name}} @alt={{vegetable.alt}} @category="vegetable" />
 {{/each}}
 {{outlet}}

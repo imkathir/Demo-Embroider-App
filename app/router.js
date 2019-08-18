@@ -1,4 +1,4 @@
-import EmberRouter from '@ember/routing/router';
+import EmberRouter from '@embroider/router';
 import config from './config/environment';
 
 const Router = EmberRouter.extend({
@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('animals');
   this.route('birds');
   this.route('home');
+  this.route('goats');
 });
 
 export default Router;

@@ -20,8 +20,12 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  // return app.toTree();
-  const { Webpack } = require('@embroider/webpack');
+  // For ember cli builder
+
+  return app.toTree();
+
+  // For embroider builder
+  /* const { Webpack } = require('@embroider/webpack');
   return require('@embroider/compat').compatBuild(app, Webpack, {
     staticAddonTestSupportTrees: true,
     staticAddonTrees: true,
@@ -32,5 +36,5 @@ module.exports = function(defaults) {
       'vegetables',
       'birds'
     ]
-  });
+  }); */
 };

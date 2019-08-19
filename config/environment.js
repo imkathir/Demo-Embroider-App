@@ -16,6 +16,11 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    // for static assets fingerprinting
+    ifa: {
+      enabled: true,
+      inline: false,
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance

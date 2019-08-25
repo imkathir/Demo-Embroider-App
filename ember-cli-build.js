@@ -27,19 +27,20 @@ module.exports = function(defaults) {
 
   // For ember cli builder
 
-  return app.toTree();
+  // return app.toTree();
 
   // For embroider builder
-  /* const { Webpack } = require('@embroider/webpack');
-  return require('@embroider/compat').compatBuild(app, Webpack, {
-    staticAddonTestSupportTrees: true,
-    staticAddonTrees: true,
-    staticHelpers: true,
-    staticComponents: true,
-    splitAtRoutes: [
-      'category',
-      'vegetables',
-      'birds'
-    ]
-  }); */
+  const { Webpack } = require('@embroider/webpack');
+  return require('@embroider/compat').compatBuild(app, Webpack);
 };
+// , {
+//   // staticAddonTestSupportTrees: true,
+//   // staticAddonTrees: true,
+//   // staticHelpers: true,
+//   // staticComponents: true,
+//   // splitAtRoutes: [
+//   //   'category',
+//   //   'vegetables',
+//   //   'birds'
+//   // ]
+// }

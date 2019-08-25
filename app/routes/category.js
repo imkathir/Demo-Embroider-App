@@ -10,7 +10,7 @@ export default Route.extend({
       { name:'Tools' }
     ];
     // eslint-disable-next-line no-console
-    console.log(arr.filterBy('route'));
+    console.log(arr.filterBy('route1'));
     return arr.filterBy('route');
   }
 });

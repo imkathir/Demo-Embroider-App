@@ -7,6 +7,7 @@ export default Route.extend({
       { name:'Birds', route: 'birds' },
       { name:'Cow', route: 'animals' },
       { name:'Goat', route: 'goats' },
+      { name:'Seeds engine', route: 'seeds' },
       { name:'Tools' }
     ];
     // eslint-disable-next-line no-console

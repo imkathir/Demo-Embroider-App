@@ -1,0 +1,12 @@
+{
+  "name": "seeds",
+  "keywords": [
+    "ember-addon",
+    "ember-engine",
+    "seeds-engine"
+  ],
+  "dependencies": {
+    "ember-cli-htmlbars": "*",
+    "ember-cli-babel": "*"
+  }
+}

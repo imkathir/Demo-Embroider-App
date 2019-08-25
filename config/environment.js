@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'farmers-market',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -15,6 +15,11 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
+    },
+    // for static assets fingerprinting
+    ifa: {
+      enabled: true,
+      inline: false,
     },
 
     APP: {
@@ -44,7 +49,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = 'FarmersMarket';
+    ENV.rootURL = '/FarmersMarket/';
     // here you can enable a production-specific feature
   }
 

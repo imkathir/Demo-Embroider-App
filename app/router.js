@@ -1,4 +1,9 @@
-import EmberRouter from '@embroider/router';
+// For embroider builder
+// import EmberRouter from '@embroider/router';
+
+// For ember cli builder
+import EmberRouter from '@ember/routing/router';
+
 import config from './config/environment';
 
 const Router = EmberRouter.extend({
@@ -14,6 +19,10 @@ Router.map(function() {
   this.route('birds');
   this.route('home');
   this.route('goats');
+
+  // seeds engine
+  this.mount('seeds');
+
 });
 
 export default Router;

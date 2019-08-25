@@ -7,10 +7,11 @@ export default Route.extend({
       { name:'Birds', route: 'birds' },
       { name:'Cow', route: 'animals' },
       { name:'Goat', route: 'goats' },
+      { name:'Seeds engine', route: 'seeds' },
       { name:'Tools' }
     ];
     // eslint-disable-next-line no-console
-    console.log(arr.filterBy('route'));
+    console.log(arr.filterBy('route1'));
     return arr.filterBy('route');
   }
 });

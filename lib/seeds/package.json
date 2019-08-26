@@ -2,8 +2,7 @@
   "name": "seeds",
   "keywords": [
     "ember-addon",
-    "ember-engine",
-    "seeds-engine"
+    "ember-engine"
   ],
   "dependencies": {
     "ember-cli-htmlbars": "*",

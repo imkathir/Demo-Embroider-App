@@ -33,16 +33,25 @@ module.exports = function(defaults) {
 
   // For embroider builder
   const { Webpack } = require('@embroider/webpack');
-  // return require('@embroider/compat').compatBuild(app, Webpack, {
-  //   staticAddonTestSupportTrees: true,
-  //   staticAddonTrees: true,
-  //   staticHelpers: true,
-  //   staticComponents: true,
-    // splitAtRoutes: [
-    //   'category',
-    //   'vegetables',
-    //   'birds'
+  return require('@embroider/compat').compatBuild(app, Webpack, {
+    staticAddonTestSupportTrees: true,
+    staticAddonTrees: true,
+    staticHelpers: true,
+    staticComponents: true,
+    splitAtRoutes: [
+      'category',
+      'vegetables',
+      'birds'
+    ],
+    // packageRules: [
+    //   {
+    //     package:'FarmersMarket',
+    //     components: {
+    //       'bird': {
+    //         acceptsComponentArguments: ['image']
+    //       }
+    //     }
+    //   }
     // ]
-  // });
-  return require('@embroider/compat').compatBuild(app, Webpack);
+  });
 };

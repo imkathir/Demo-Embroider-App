@@ -19,6 +19,7 @@ Router.map(function() {
   this.route('birds');
   this.route('home');
   this.route('goats');
+  this.route('dupfinder');
 
   // seeds engine
   this.mount('seeds');

@@ -1,0 +1,20 @@
+{{outlet}}
+<h3 class="text-green">Duplicate finder</h3>
+<form>
+  <label for="dupString">Enter the Input: </label>
+  {{input type="text" id="dupString" class="form-control" value=dupString autofocus=true}}
+  <button {{action "findDuplicates"}} class="btn btn-primary">Find Duplicates</button>
+</form>
+{{#if dupArray.length}}
+  <h4 class="text-orange">Unique Duplicates Found: {{dupArray.length}}</h4>
+{{else}}
+  <h4 class="text-green">No Dups found!!</h4>
+{{/if}}
+{{#each dupArray as |dup index|}}
+  <h6 class="text-blue">  {{index}}: {{dup}}</h6>
+{{/each}}
+
+<h5 class="text-orange">Unique Array</h5>
+{{#each uniqueArray as |item index|}}
+  <h6 class="text-blue">  {{index}}: {{item}}</h6>
+{{/each}}

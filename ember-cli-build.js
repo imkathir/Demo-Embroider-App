@@ -41,7 +41,8 @@ module.exports = function(defaults) {
     splitAtRoutes: [
       'category',
       'vegetables',
-      'birds'
+      'birds',
+      'dupfinder'
     ],
     // packageRules: [
     //   {

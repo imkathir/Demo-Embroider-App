@@ -1,8 +1,12 @@
 {{outlet}}
 <h3 class="text-green">Duplicate finder</h3>
 <form>
-  <label for="dupString">Enter the Input: </label>
-  {{input type="text" id="dupString" class="form-control" value=dupString autofocus=true}}
+  <div class="form-group row">
+    <label for="dupString" class="col-2 col-form-label">Enter the Input </label>
+    <div class="col-sm-8">
+      {{input type="text" id="dupString" class="form-control" value=dupString autofocus=true}}
+    </div>
+  </div>
   <button {{action "findDuplicates"}} class="btn btn-primary">Find Duplicates</button>
 </form>
 {{#if dupArray.length}}

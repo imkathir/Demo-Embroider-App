@@ -1,31 +1,38 @@
-<ul class="nav nav-pills nav-stacked fill nav-bottom-spacing">
-  <LinkTo @params={{array "home"}} @current-when="home">
-    <li>HOME</li>
-  </LinkTo>
+  
+{{!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarWEX" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse" id="navbarWEX"> --}}
+<nav class="navbar-section navbar px-0 text-center" role="navigation">
+  <ul>
+    <LinkTo @params={{array "home"}} @current-when="home">
+      <li>HOME</li>
+    </LinkTo>
+    <LinkTo @params={{array "dupfinder"}} @current-when="dupfinder">
+      <li>DUPFINDER</li>
+    </LinkTo>
 
-  <LinkTo @params={{array "dupfinder"}} @current-when="dupfinder">
-    <li>DUPFINDER</li>
-  </LinkTo>
+    <LinkTo @params={{array "category"}} @current-when="category">
+      <li>CATEGORY</li>
+    </LinkTo>
 
-  <LinkTo @params={{array "category"}} @current-when="category">
-    <li>CATEGORY</li>
-  </LinkTo>
+    {{#accordion-list as |accordion|}}
+      {{#accordion.item as |accordionItem|}}
+        {{!-- Create a 'toggle' and a 'panel' for the item --}}
+        {{#accordionItem.toggle}}
+          <a href="#"><li>CATEGORY tab<b class="caret"></b></li></a>
+        {{/accordionItem.toggle}}
 
-  {{#accordion-list as |accordion|}}
-    {{#accordion.item as |accordionItem|}}
-      {{!-- Create a 'toggle' and a 'panel' for the item --}}
-      {{#accordionItem.toggle}}
-        <a href="#"><li>CATEGORY tab<b class="caret"></b></li></a>
-      {{/accordionItem.toggle}}
-
-      {{!-- Clicking on the 'toggle' will display the contents of the 'panel' --}}
-      {{#accordionItem.panel}}
-        <ul>
-          {{#each model as |category|}}
-            <LinkTo @params={{array category.route}}><li>{{category.name}}</li></LinkTo>
-          {{/each}}
-        </ul>
-      {{/accordionItem.panel}}
-    {{/accordion.item}}
-  {{/accordion-list}}
-</ul>
+        {{!-- Clicking on the 'toggle' will display the contents of the 'panel' --}}
+        {{#accordionItem.panel}}
+          <ul>
+            {{#each model as |category|}}
+              <LinkTo @params={{array category.route}}><li>{{category.name}}</li></LinkTo>
+            {{/each}}
+          </ul>
+        {{/accordionItem.panel}}
+      {{/accordion.item}}
+    {{/accordion-list}}
+  </ul>
+</nav>
+{{!-- </div> --}}

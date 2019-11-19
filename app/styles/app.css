@@ -87,9 +87,6 @@ table {
   display: inline-block;
   padding-left: 15%;
 }
-.d-flex {
-  display: flex;
-}
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -159,9 +156,34 @@ p {
   justify-content: center;
 }
 .category-content {
-  width: 30%;
+  width: 40%;
   display: inline-block;
 }
 strong {
   font-weight: 800;
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    min-width: 1024px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 240px) {
+  body {
+    min-width: 1024px;
+    overflow-x: auto;
+  }
+}
+form {
+  padding: 50px;
+}
+.text-orange {
+  color: rgb(192, 129, 13);
+}
+.text-blue {
+  color: #07425e;
+}
+.text-green {
+  color: rgb(4, 83, 40);
 }

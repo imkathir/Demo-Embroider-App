@@ -1,7 +1,11 @@
-<div class="category">
-  <span class="category-content">
-    <p >Common Name of the {{category}} : <strong class="text-uppercase">{{name}}</strong></p>
-    <p>Wild {{category}} : {{isWild}}</p>
+<div class="category form-group row">
+  <span class="category-content text-left">
+    <p class="row">
+      <label class="col-6">Name of the {{category}}</label>  <label><strong class="text-uppercase col-6">{{name}}</strong></label>
+    </p>
+    <p class="row">
+      <label class="col-6">Is a Wild bird</label>  <label><strong class="text-uppercase col-6">{{isWild}}</strong></label>
+    </p>
   </span>
   <Image @src={{src}} @alt="{{alt}} {{name}}"></Image>
 </div>

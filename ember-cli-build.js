@@ -12,7 +12,9 @@ module.exports = function(defaults) {
       fingerprintAssetMap: true
     }
   });
-
+  app.import('node_modules/bootstrap/dist/css/bootstrap.min.css');
+  app.import('node_modules/bootstrap/dist/js/bootstrap.min.js');
+  
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
@@ -33,16 +35,26 @@ module.exports = function(defaults) {
 
   // For embroider builder
   const { Webpack } = require('@embroider/webpack');
-  // return require('@embroider/compat').compatBuild(app, Webpack, {
-  //   staticAddonTestSupportTrees: true,
-  //   staticAddonTrees: true,
-  //   staticHelpers: true,
-  //   staticComponents: true,
-    // splitAtRoutes: [
-    //   'category',
-    //   'vegetables',
-    //   'birds'
+  return require('@embroider/compat').compatBuild(app, Webpack, {
+    staticAddonTestSupportTrees: true,
+    staticAddonTrees: true,
+    staticHelpers: true,
+    staticComponents: true,
+    splitAtRoutes: [
+      'category',
+      'vegetables',
+      'birds',
+      'dupfinder'
+    ],
+    // packageRules: [
+    //   {
+    //     package:'FarmersMarket',
+    //     components: {
+    //       'bird': {
+    //         acceptsComponentArguments: ['image']
+    //       }
+    //     }
+    //   }
     // ]
-  // });
-  return require('@embroider/compat').compatBuild(app, Webpack);
+  });
 };

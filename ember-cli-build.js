@@ -46,15 +46,15 @@ module.exports = function(defaults) {
       'birds',
       'dupfinder'
     ],
-    // packageRules: [
-    //   {
-    //     package:'FarmersMarket',
-    //     components: {
-    //       'bird': {
-    //         acceptsComponentArguments: ['image']
-    //       }
-    //     }
-    //   }
-    // ]
+    packageRules: [
+      {
+        package:'FarmersMarket',
+        components: {
+          'bird': {
+            acceptsComponentArguments: ['image']
+          }
+        }
+      }
+    ]
   });
 };

@@ -13,14 +13,5 @@ module('Integration | Component | category', function(hooks) {
     await render(hbs`{{category}}`);
 
     assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      {{#category}}
-        template block text
-      {{/category}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

@@ -1,7 +1,8 @@
 # farmers-market    [![Build Status](https://travis-ci.com/imkathir/FarmersMarket.svg?branch=master)](https://travis-ci.com/imkathir/FarmersMarket.svg?branch=master)
 
+
 This is an Ember app built with `Embroider`
-[View App](https://imkathir.github.io/Demo-Embroider-App/)
+[View App](https://imkathir.github.io/FarmersMarket/)
 
 ## Prerequisites
 

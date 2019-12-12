@@ -21,9 +21,6 @@ Router.map(function() {
   this.route('goats');
   this.route('dupfinder');
 
-  // seeds engine
-  this.mount('seeds');
-
 });
 
 export default Router;

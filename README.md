@@ -1,4 +1,4 @@
-# farmers-market
+# farmers-market    [![Build Status](https://travis-ci.com/imkathir/FarmersMarket.svg?branch=master)](https://travis-ci.com/imkathir/FarmersMarket)
 
 This is a testing app built in Ember js framework and Deployed this app in Github gh-pages.
 To access this app kindly visit https://imkathir.github.io/FarmersMarket/

@@ -10,7 +10,6 @@ export default Controller.extend({
       let dupArray = strArray.filter((item, index) => strArray.indexOf(item) !== index)
       dupArray = [...new Set(dupArray)];
       this.set('dupArray', dupArray);
-      alert('Duplication computed');
     }
   }
 });

@@ -2,5 +2,5 @@
 {{#each model as |bird|}}
   <Bird @src={{bird.src}} @name={{bird.name}} @alt={{bird.alt}} @isWild={{if bird.isWild "YES" "NO"}} @category="bird" />
 {{/each}}
-{{component imageComponent src="nothing.png" alt="nothing.png"}}
+<Image @src="nothing.png" @alt="nothing.png"/>
 {{outlet}}
